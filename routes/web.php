@@ -162,6 +162,10 @@ Route::middleware(['XSS', 'IsInstalled'])->group(function () {
     Route::get('/agents', [AgentController::class, 'index'])->name('agents.index');
     Route::post('/agents/apply', [AgentController::class, 'storeAgent'])->name('agents.apply');
     Route::post('/agents/book-pickup', [AgentController::class, 'storePickup'])->name('agents.book-pickup');
+
+    // One-time database sync for hosts without terminal access.
+    // Disabled unless DB_SYNC_TOKEN is set in .env.
+    Route::get('/db-sync', [\App\Http\Controllers\DbSyncController::class, 'run'])->name('db.sync');
     //end frontend
 
     Route::get('merchant/sign-up',                [MerchantController::class, 'signUp'])->name('merchant.sign-up');

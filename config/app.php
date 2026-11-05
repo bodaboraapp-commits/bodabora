@@ -18,6 +18,10 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
     'app_installed'=>env('APP_INSTALLED'),
+
+    // One-time database sync endpoint token. Leave empty to disable the /db-sync
+    // route entirely (it fails closed when this is not set).
+    'db_sync_token' => env('DB_SYNC_TOKEN'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment
