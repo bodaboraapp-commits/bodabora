@@ -1,0 +1,209 @@
+body.theme-3-body,
+.theme-3-body {
+    font-family: 'Inter', sans-serif;
+    background: #F6FBF7;
+    overflow-x: hidden;
+}
+
+/* Bootstrap loads after Tailwind — reset links in theme-3 chrome */
+.theme-3-header a.nav-menu-link,
+.theme-3-footer a.footer-menu-link,
+.theme-3-body a.theme-3-btn-link {
+    text-decoration: none !important;
+}
+
+.theme-3-header a.nav-menu-link {
+    color: #4a5565 !important;
+    font-weight: 500;
+}
+
+.theme-3-header a.nav-menu-link:hover {
+    color: #008236 !important;
+    background-color: #dcfce7;
+}
+
+.theme-3-header a.nav-menu-link--active {
+    color: #008236 !important;
+    background-color: #dcfce7;
+}
+
+.theme-3-footer a.footer-menu-link {
+    color: #6a7282 !important;
+}
+
+.theme-3-footer a.footer-menu-link:hover {
+    color: #00a63e !important;
+}
+
+.theme-3-body a.theme-3-btn-link {
+    color: #101828 !important;
+}
+
+.theme-3-body a.theme-3-btn-link:hover {
+    color: #008236 !important;
+}
+
+.floating {
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.gb-card-lift {
+    transition: all .35s ease;
+}
+
+.gb-card-lift:hover {
+    transform: translateY(-10px);
+}
+
+.gb-btn-gradient {
+    background: linear-gradient(135deg, var(--site-primary, #22C55E) 0%, color-mix(in srgb, var(--site-primary, #15803D) 85%, #000) 100%);
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.gb-surface-soft {
+    background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+}
+
+.gb-surface-hero {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--site-primary, #16A34A) 90%, #000) 0%, var(--site-primary, #22C55E) 50%, #4ADE80 100%);
+}
+
+.gb-section-why {
+    background: linear-gradient(to bottom right, #008236 0%, #0d542b 100%);
+}
+
+[x-cloak] {
+    display: none !important;
+}
+
+.pricing-tab-btn.pricing-tab-active {
+    background: linear-gradient(135deg, var(--site-primary, #22C55E) 0%, color-mix(in srgb, var(--site-primary, #15803D) 85%, #000) 100%);
+    color: white !important;
+    border-color: transparent;
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--site-primary, #22C55E) 35%, transparent);
+}
+
+.pricing-tab-btn.pricing-tab-inactive {
+    background: white;
+    color: #374151 !important;
+    border: 1px solid #DCFCE7;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.pricing-tab-btn.pricing-tab-inactive:hover {
+    background: #ECFDF5;
+    color: color-mix(in srgb, var(--site-primary, #15803D) 90%, #000) !important;
+    border-color: #86EFAC;
+}
+
+.gb-pricing-tile {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.gb-pricing-tile:hover {
+    transform: translateY(-4px);
+    border-color: #86EFAC;
+    box-shadow: 0 12px 28px -8px color-mix(in srgb, var(--site-primary, #22C55E) 18%, transparent);
+}
+
+.pricing-tab-fade-in {
+    animation: pricingTabFade 0.25s ease-out;
+}
+
+@keyframes pricingTabFade {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.partner-logo-t3 {
+    transition: filter 0.35s ease, transform 0.35s ease;
+    filter: grayscale(1);
+}
+
+.partner-logo-t3:hover {
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+
+.gradient-btn {
+    background: linear-gradient(135deg, var(--site-primary, #22C55E) 0%, color-mix(in srgb, var(--site-primary, #15803D) 85%, #000) 100%);
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.card-hover {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card-hover:hover {
+    box-shadow: 0 20px 40px -12px color-mix(in srgb, var(--site-primary, #22C55E) 20%, transparent);
+}
+
+/* Blog cards: clickable overlay — inner text must NOT look like default links */
+a.blog-card-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    text-decoration: none !important;
+    color: transparent !important;
+    background: transparent;
+}
+
+article.blog-card {
+    cursor: pointer;
+}
+
+article.blog-card--compact h5 {
+    color: #101828 !important;
+}
+
+article.blog-card h3,
+article.blog-card h4,
+article.blog-card p,
+article.blog-card span {
+    text-decoration: none !important;
+}
+
+article.blog-card h3 {
+    color: #99a1af !important;
+}
+
+article.blog-card h4 {
+    color: #101828 !important;
+}
+
+article.blog-card .text-blog-card-text,
+article.blog-card p.text-blog-card-text {
+    color: #99a1af !important;
+}
+
+article.blog-card:hover h3 {
+    color: #6a7282 !important;
+}
+
+a.service-card-link {
+    text-decoration: none !important;
+}
+
+a.service-card-link.text-section-text {
+    color: #00a63e !important;
+}
+
+a.service-card-link.text-section-text:hover {
+    color: #007a55 !important;
+}
+
+a.service-card-link.text-white {
+    color: #ffffff !important;
+}
+
+.gb-surface-hero a.service-card-link.text-white:hover {
+    color: #f0fdf4 !important;
+}

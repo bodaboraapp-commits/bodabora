@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --animate-fade-in: fadeIn 0.7s ease-out forwards;
+
+
+    --color-white: #ffffff;
+
+    /* === common button colors === */
+    --color-button-text: #ffffff; /* white */
+    --color-button-bg: #009966; /* emerald-600 */
+    --color-button-hover-bg: #007a55; /* emerald-700 */
+    --color-button-tran-text: #009966; /* emerald-600 */
+    --color-button-border: #009966; /* emerald-600 */
+    --color-button-border-hover: #007a55; /* emerald-700 */
+
+
+    /* === common text color === */
+    --color-body-text: #1e2939;
+    /*  */
+    --color-section-text: #007a55; /* emerald-700 */
+    --color-section-heading-text: #032e15; /* green-950 */
+    --color-section-desc-text: #4a5565; /* gray-600 */
+    --color-section-light-text: #6a7282; /* gray-500 */
+    --color-section-deep-text: #101828; /* gray-900 */
+
+
+    /* === border colors === */
+    --color-border-green-100: #dcfce7; /* green-100 */
+    /* green-100 */
+
+
+    /* === top bar background === */
+    --color-top-bar-bg: #14532d; /* green-800 */
+
+    /* === header navigation section === */
+    --color-active-border: #009966; /* emerald-600 */
+    --color-nav-text: #4a5565; /* gray-600 */
+    /* Use this when it is active, otherwise use hover. */
+    --color-nav-bg: #f0fdf4; /* green-50 */
+    --color-nav-active-text: #007a55; /* emerald-700 */
+
+
+
+    /* === hero section ===*/
+    --color-hero-overlay: #000000; /* black  */
+    --color-hero-description-text: #e5e7eb; /* gray-200 */
+    /* badges design */
+    --color-badge-bg: #00a63e; 
+    --color-badge-text: #b9f8cf;
+    --color-badge-border: #05df72;
+
+    /* === tracking input box === */
+    --color-tr-input-icon: #99a1af;
+    --color-tr-input-border: #e5e7eb;
+    --color-tr-input-focus: #00a63e;
+    
+
+    /* === WHY CHOOSE US === */
+    --color-choose-bg-gr-from: #008236;
+    --color-choose-bg-gr-to: #0d542b;
+    --color-choose-desc-text: #dcfce7;
+    --color-choose-card-icon: #008236;
+    --color-choose-card-icon-bg: #dcfce7;
+    --color-choose-card-head-text: #000000;
+    --color-choose-card-desc-text: #4a5565;
+
+
+    /* === pricing === */
+    --color-pricing-icon-bg: #ecfdf5; /* emerald-50 */
+    --color-pricing-icon-text: #00bc7d; /* emerald-500 */
+    --color-pricing-dollar-text: #009966; /* emerald-600 */
+    --color-pricing-footer-text: #00d492; /* emerald-400 */
+
+
+    /* === Process — side by side === */
+    --color-process-bg: #f0fdf4;
+    --color-process-step-heading-text: #101828;
+    --color-process-step-desc-text: #4a5565;
+    --color-process-step-number-text: #006045;
+    --color-process-step-number-bg: #dcfce7;
+    --color-process-step-number-act-bg: #009966;
+
+    /* === Calculate Cost === */
+    --color-calculate-beg-text: #007a55; /* emerald-700 */
+    --color-calculate-total-text: #007a55; /* emerald-700 */
+    --color-calculate-form-label-text: #364153; /* gray-700 */
+    --color-calculate-form-input-border: #e5e7eb; /* gray-200 */
+    --color-calculate-form-input-text: #1e2939; /* gray-800 */
+    --color-calculate-form-input-focus-bor: #00bc7d; /* emerald-500 */
+
+
+    /* === Being Merchants === */
+    /* ===== no extra colors needed  === */
+
+
+    /* =====  Statistics  ===== */
+    --color-statistics-bg: #032e15; /* green-950 */
+    --color-statistics-heading-text: #ffffff; /* white */
+    --color-statistics-desc-text: #a4f4cf; /* emerald-200 */
+    
+    /* =====  Testimonials  ===== */
+    --color-testimo-card-bg: #ffffff; /* white */
+    --color-testimo-card-ring: #dcfce7; /* green-100 */
+    --color-testimo-card-icon: #00bc7d; /* emerald-500 */
+    --color-testimo-card-text: #364153; /* gray-700 */
+    --color-testimo-card-img-ri: #d0fae5; /* emerald-100 */
+    --color-testimo-card-cli-name: #101828; /* gray-900 */
+    --color-testimo-card-cli-pos: #6a7282; /* gray-500 */
+    
+    
+    /* =====  Newsletter  ===== */
+    --color-newsletter-bg: #ecfdf5; /* emerald-50 */
+    --color-newsletter-input-border: #a4f4cf; /* emerald-200 */
+    --color-newsletter-input-focus: #00bc7d; /* emerald-500 */
+    --color-newsletter-input-focus-border: #00d492; /* emerald-400 */
+    
+    /* =====  News & Blogs  ===== */
+    --color-blog-heading-text: #101828; /* gray-900 */
+    --color-blog-heading-text-hover: #006045; /* emerald-800 */
+    --color-blog-date-text: #007a55; /* emerald-700 */
+    --color-blog-more-text-hover: #004f3b; /* emerald-900 */
+    
+    
+    /* =====  Footer section  ===== */
+    --color-footer-bg: #032e15; /* green-950 */
+    --color-footer-logo-bg: #009966; /* emerald-600 */
+    --color-footer-logo-text: #ffffff; /* white */
+    --color-footer-logo-desc: #d0fae5; /* emerald-100 */
+    /* footer icons */
+    --color-footer-icon-border: #00bc7d; /* emerald-500 */
+    --color-footer-icon-text: #d0fae5; /* emerald-100 */
+    --color-footer-icon-hover-bg: #009966; /* emerald-600 */
+    --color-footer-icon-hover-border: #009966; /* emerald-600 */
+    /* === */
+    --color-footer-link-text-head: #a4f4cf; /* emerald-200 */
+    --color-footer-link-text: #d0fae5; /* emerald-100 */
+    --color-footer-link-text-hover: #ffffff; /* white */
+    /* === */
+    --color-footer-input-border: #007a55; /* emerald-700  */
+    --color-footer-input-bg: #0d542b; /* green-900  */
+    --color-footer-input-placeholder-text: #a4f4cf; /* emerald-200  */
+    --color-footer-input-placeholder-ring: #00d492; /* emerald-400  */
+    
+    --color-footer-copy-border: #006045; /* emerald-800  */
+    --color-footer-copy-text: #a4f4cf; /* emerald-200  */
+
+
+
+
+    /* =================
+        Custom tracking page 
+    ==================== */
+
+    /*=== PAGE INTRO ===*/
+    --color-intro-gr-from: #009966; /* emerald-600 */
+    --color-intro-gr-via: #007a55; /* emerald-700 */
+    --color-intro-gr-to: #032e15; /* green-950 */
+    --color-intro-nav-text: #d0fae5; /* emerald-100 */
+    --color-intro-desc-text: #ecfdf5; /* emerald-50 */
+
+    /* page intro button */
+    --color-intro-btn-bg: #ffffff; /*  white */
+    --color-intro-btn-text: #006045; /* emerald-800 */
+    --color-intro-btn-hover-bg: #ecfdf5; /* emerald-50 */
+
+    /*=== Summary strip ===*/
+    --color-summary-badge-bg: #fef3c6; /* amber-100 */
+    --color-summary-badge-text: #7b3306; /* amber-900 */
+    --color-summary-badge-ping-an-bg: #ffba00; /* amber-400 */
+    --color-summary-badge-ping-bg: #fd9a00; /* amber-500 */
+    
+    /*=== progress bar ===*/
+    --color-progress-bg: #dcfce7; /* green-100 */
+    --color-progress-gr-bg-from: #00bc7d; /* emerald-500 */
+    --color-progress-gr-bg-to: #009966; /* emerald-600 */
+    --color-progress-text: #364153; /* gray-700 */
+    
+    /*==========
+     Left column: details + timeline 
+     ==========  common */
+     --color-section-tracking-border: #dcfce7; /* green-100 */
+     /*=== Left column: first + second + third section ===*/
+     --color-section-grid-border: #f0fdf4; /* green-50 */
+     --color-section-grid-bg: #f0fdf4; /* green-50 */
+     --color-section-grid-title: #007a55; /* emerald-700 */
+     --color-section-grid-text: #101828; /* gray-900 */
+     --color-section-grid-heil-text: #006045; /* emerald-800 */
+     
+     /*=== Left column: fourth section progress steps ===*/
+     --color-section-prog-icon-active-bg: #009966; /* emerald-600 */
+     --color-section-prog-icon-bg: #d0fae5; /* emerald-100 */
+     --color-section-prog-icon-text: #006045; /* emerald-800 */
+     --color-section-prog-icon-active-text: #ffffff; /* white */
+     --color-section-prog-icon-ring: #ffffff; /* white */
+     --color-section-prog-title: #101828; /* gray-900 */
+     --color-section-prog-date-active: #007a55; /* emerald-700 */
+     --color-section-prog-date: #6a7282; /* gray-500 */
+     --color-section-prog-desc: #4a5565; /* gray-600 */
+     /* incomplete */
+     --color-section-inc-prog-border: #d1d5dc; /* gray-300 */
+     --color-section-inc-prog-bg: #ffffff; /* white */
+     --color-section-inc-prog-text: #99a1af; /* gray-400 */
+     --color-section-inc-prog-ring: #ffffff; /* white */
+     --color-section-inc-prog-title: #364153; /* gray-700 */
+     --color-section-inc-prog-date: #6a7282; /* gray-500 */
+     --color-section-inc-prog-desc: #6a7282; /* gray-500 */
+     
+     
+     /*==========
+      Right column: details + timeline 
+      ==========  common */
+      /*=== Right column: Assigned courier section ===*/
+      --color-section-cur-img-ring: #d0fae5; /* emerald-100 */
+      
+      
+      /*=== Right column: Proof of delivery section ===*/
+      --color-section-pod-border: #5ee9b5; /* emerald-300 */
+      --color-section-pod-bg: #ecfdf5; /* emerald-50 */
+      --color-section-pod-file-bg: #b9f8cf; /* green-200 */
+      --color-section-pod-file-text: #6a7282; /* gray-500 */
+      --color-section-pod-file-icon: #5ee9b5; /* emerald-300 */
+      
+      /*==========
+      tracking page footer 
+       ==========  common */
+
+
+
+
+}
+
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

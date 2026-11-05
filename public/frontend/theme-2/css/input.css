@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+@import "tailwindcss";
+
+
+@theme {
+    --color-brand-50: #F0FDF4;
+    --color-brand-100: #DCFCE7;
+    --color-brand-400: #4ADE80;
+    --color-brand-500: #22C55E;
+    --color-brand-600: #16A34A;
+    --color-brand-800: #166534;
+    --color-brand-900: #14532D;
+
+    --font-sans: "Inter", sans-serif;
+
+    --shadow-soft: 0 10px 40px -10px rgba(22, 163, 74, 0.1);
+}

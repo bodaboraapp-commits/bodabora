@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+@import "tailwindcss";
+
+
+@theme {
+    --color-body-text: #002114; /* deep green 950 */
+    --color-heading-text: #002114; /* deep green 950 */
+    --color-card-heading-text: #002114; /* green 950 */
+    --color-description-text: #6C788B; /* gray light 600 */
+    --color-description-light-text: #8591A5; /* gray light more 500 */
+    --color-highlight-text: #00A572; /* green light 600 */
+    --color-text-white: #FFFFFF; /* white */
+    --color-text-light: #BEFFDC; /* green light 100 */
+    --color-text-deep-green: #005236; /* deep green 800 */
+
+    
+}

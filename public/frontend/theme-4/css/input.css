@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+
+@theme {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --animate-fade-in: fadeIn 0.7s ease-out forwards;
+
+
+    --color-white: #ffffff;
+
+    /* === common button colors === */
+    --color-button-text: #ffffff; /* white */
+    --color-button-bg-light: #dcfce7; /* green-100 */
+    --color-button-bg-light-active: #05df72; /* green-400 */
+    --color-button-bg: #009966; /* emerald-600 */
+    --color-button-hover-bg: #007a55; /* emerald-700 */
+    --color-button-tran-text: #009966; /* emerald-600 */
+    --color-button-border: #009966; /* emerald-600 */
+    --color-button-border-hover: #007a55; /* emerald-700 */
+
+
+    /* === common text color === */
+    --color-body-text: #1F2937; /*  */
+    --color-section-text: #00a63e; /* green-600 */
+    --color-section-heading-text: #032e15; /* green-950 */
+    --color-section-desc-text: #4a5565; /* gray-600 */
+    --color-section-light-text: #6a7282; /* gray-500 */
+    --color-section-extra-light-text: #99a1af; /* gray-400 */
+    --color-section-deep-text: #101828; /* gray-900 */
+
+
+    /* === border colors === */
+    --color-border-green-100: #dcfce7; /* green-100 */
+    
+
+
+    /* === top bar background === */
+    --color-top-bar-bg: #14532d; /* green-800 */
+
+    /* === header navigation section === */
+    /* Use this when it is active, otherwise use hover. */
+    --color-nav-active-bg: #dcfce7; /* green-100 */
+    --color-nav-active-text: #008236; /* green-700 */
+
+
+
+    /* === hero section ===*/
+    --color-hero-bg-overlay-one: #dcfce7; /* green-100 */
+    --color-hero-bg-overlay-two: #b9f8cf; /* green-200 */
+    --color-hero-star-text: #fcc800; /* yellow-400 */
+    /* badges design */
+    --color-badge-bg: #dcfce7; /* green-100 */
+    --color-badge-text: #008236; /* green-700 */
+
+    /* === SERVICES section === */
+    --color-services-bg: #f0fdf4; /* green-50 */
+    --color-services-card-icon: #63e6be; /* green-light */
+    
+    /* === GALLERY section === */
+    
+    /* === PRICING section === */
+    --color-pricing-card-icon: #00a63e; /* green-600 */
+    --color-pricing-card-grid-text-w: #4a5565; /* gray-600 */
+    --color-pricing-card-grid-text-p: #101828; /* gray-900 */
+    
+    
+    /* === TESTIMONIAL section === */
+    --color-testimo-card-icon: #a4f4cf; /* emerald-200 */
+    --color-testimo-card-desc-text: #6a7282; /* gray-500 */
+    --color-testimo-card-name-text: #99a1af; /* gray-400 */
+    
+    /* === FAQ section === */
+    --color-faq-icon-text: #009966; /* emerald-600 */
+    --color-faq-icon-bg: #d0fae5; /* emerald-100 */
+    --color-faq-ques-text: #101828; /* gray-900 */
+    --color-faq-ans-text: #6a7282; /* gray-500 */
+    
+    /* === CONTACT section === */
+    --color-contact-gr-bg-to: #009966; /* emerald-600 */
+    --color-contact-gr-bg-via: #016630; /* green-800 */
+    --color-contact-gr-bg-from: #0d542b; /* green-900 */
+    --color-contact-desc-text: #f0fdf4; /* green-50 */
+    --color-contact-emd-text: #b9f8cf; /* green-200 */
+/* input */
+    --color-contact-input-border: #e5e7eb; /* gray-200 */
+    --color-contact-input-focus: #00c950; /* green-500 */
+    
+    /* === BLOG section === */
+    --color-blog-card-text: #99a1af; /* gray-400 */
+    
+    /* === CTA section === */
+    --color-cta-card-shadow: #7bf1a8; /* green-300 */
+    --color-cta-card-desc-text: #f0fdf4; /* green-50 */
+    
+    /* === FOOTER section === */
+    --color-footer-desc-text: #6a7282; /* gray-500 */
+    --color-footer-link-text: #6a7282; /* gray-500 */
+    /* === FOOTER copyright text section === */
+    --color-footer-copyright-text: #99a1af; /* gray-400 */
+    --color-footer-copyright-text-hover: #00a63e; /* green-600 */
+
+
+
+
+
+
+
+    /* =================
+        Custom tracking page 
+    ==================== */
+
+    /*=== tracking hero section PAGE ===*/
+   --color-tracking-card-shadow: #7bf1a8; /* green-300 */
+   --color-tracking-card-desc-text: #f0fdf4; /* green-50 */
+
+
+    
+ 
+
+
+}

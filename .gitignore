@@ -1,4 +1,5 @@
 /.phpunit.cache
+/.artifacts
 /node_modules
 /public/build
 /public/hot
@@ -9,6 +10,11 @@
 # .env
 
 /v1.3-wecourier.zip
+/bodabora_production_ready.zip
+/bodabora_installer_ready.zip
+/bodabora_complete_production.zip.*
+# Google service-account private key - never commit this
+/config/FirebasePrivateKey.json
 /.env
 .env
 .env.backup

@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Lufga';
+    src: url('../../lufga_fonts/Lufga-Bold.otf') format('opentype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Apply Lufga font cleanly while preserving all icon fonts */
+body, p, h1, h2, h3, h4, h5, h6, span:not(.fa):not(.fas):not(.far):not(.fab):not(.zmdi), a, button, input, select, textarea, label, th, td {
+    font-family: 'Lufga', sans-serif !important;
+}
+
+i, .fa, .fas, .far, .fab, .zmdi, [class^="fa-"], [class*=" fa-"], [class^="zmdi-"], [class*=" zmdi-"] {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "FontAwesome", "Material Design Iconic Font", "Material Icons", sans-serif !important;
+}
+
+/* Sidebar / side menu: the theme pins Roboto on sidebar links with a 4-class
+   selector (backend/libs/css/style.css:1850), which out-specifies the generic
+   font rule above. Mirror that chain with the sidebar wrapper so the new app
+   font wins on specificity, not merely on stylesheet order. */
+.sidebarNavigation .nav-left-sidebar.sidebar-dark .navbar-nav .nav-link,
+.sidebarNavigation .nav-left-sidebar.sidebar-primary .navbar-nav .nav-link,
+.sidebarNavigation .nav-left-sidebar .navbar-nav .nav-item .nav-link,
+.sidebarNavigation .nav-left-sidebar .submenu .nav .nav-item .nav-link,
+.sidebarNavigation .nav-left-sidebar .nav-divider {
+    font-family: 'Lufga', sans-serif !important;
+}
+
+/* Modern UI/UX Refinement Stylesheet */
+:root {
+    --bs-border-radius: 10px;
+    --bs-border-radius-sm: 6px;
+    --bs-border-radius-lg: 14px;
+    --transition-base: all 0.2s ease-in-out;
+}
+
+body {
+    background-color: #f4f6f9 !important;
+    color: #2c3e50 !important;
+    letter-spacing: -0.01em;
+}
+
+/* Modern Cards */
+.card, .dashboard-square-card, .metric-card {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.03) !important;
+    transition: var(--transition-base);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.card:hover, .dashboard-square-card:hover {
+    box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Stat cards (the ebikeGO dashboard and similar pages): fill with the brand green
+   and flip the text to white on hover. The theme only does this for cards inside
+   .header-summery (backend/libs/css/custom.css:363), so on pages without that
+   wrapper the text turned white over a still-white card and disappeared. */
+.card:hover.total-card-color {
+    background-color: var(--primary-color) !important;
+    cursor: pointer;
+}
+
+.card-header {
+    background-color: transparent !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04) !important;
+    padding: 1.25rem 1.5rem !important;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 1.5rem !important;
+}
+
+/* Modern Buttons - Fixing Distorted Shapes & Pill Overrides */
+.btn, .btn-success, .btn-danger, .btn-primary, .btn-warning, .btn-secondary, .btn-info {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    padding: 0.45rem 1rem !important;
+    transition: var(--transition-base) !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.75rem !important;
+    font-size: 0.85rem !important;
+    border-radius: 6px !important;
+}
+
+.btn-lg {
+    padding: 0.6rem 1.5rem !important;
+    border-radius: 10px !important;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Action Dropdown Buttons in Tables */
+.table .dropdown-toggle, .table .btn-group .btn {
+    border-radius: 6px !important;
+    padding: 0.3rem 0.6rem !important;
+}
+
+/* Modern Form Controls */
+.form-control, .form-select, .select2-container--default .select2-selection--single {
+    border-radius: 8px !important;
+    border: 1px solid #dcdfe6 !important;
+    padding: 0.55rem 0.9rem !important;
+    font-size: 0.92rem !important;
+    transition: var(--transition-base) !important;
+    background-color: #fff !important;
+    height: auto !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(var(--primary-color), 0.12) !important;
+}
+
+/* Modern Tables */
+.table {
+    border-collapse: separate !important;
+    border-spacing: 0;
+}
+
+.table thead th {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #e2e8f0 !important;
+    padding: 0.9rem 1rem !important;
+}
+
+.table tbody td {
+    padding: 0.9rem 1rem !important;
+    vertical-align: middle !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    color: #334155 !important;
+    font-size: 0.9rem;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f8fafc !important;
+}
+
+/* Badges */
+.badge {
+    padding: 0.4em 0.8em !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    font-size: 0.78rem !important;
+}
+
+/* Sidebar & Navigation */
+.dashboard-sidebar {
+    background: #ffffff !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.02);
+}
+
+.dashboard-header {
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.02);
+}
+
+.sidebar-nav .nav-link {
+    border-radius: 8px;
+    margin: 4px 12px;
+    transition: var(--transition-base);
+}
+
+.sidebar-nav .nav-link:hover, .sidebar-nav .nav-link.active {
+    background-color: rgba(var(--primary-color), 0.08) !important;
+    color: var(--primary-color) !important;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 14px !important;
+    border: none !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 1.25rem 1.5rem !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #f1f5f9 !important;
+    padding: 1rem 1.5rem !important;
+}
+
+/* Fix datetimepicker / time scroll arrows visibility */
+.bootstrap-datetimepicker-widget .timepicker-picker span,
+.bootstrap-datetimepicker-widget [data-action="incrementHours"],
+.bootstrap-datetimepicker-widget [data-action="decrementHours"],
+.bootstrap-datetimepicker-widget [data-action="incrementMinutes"],
+.bootstrap-datetimepicker-widget [data-action="decrementMinutes"],
+.bootstrap-datetimepicker-widget th.prev,
+.bootstrap-datetimepicker-widget th.next,
+.bootstrap-datetimepicker-widget th.picker-switch {
+    color: #1e293b !important;
+}
+
+.bootstrap-datetimepicker-widget a[data-action],
+.bootstrap-datetimepicker-widget span[data-action] {
+    color: #1e293b !important;
+    font-weight: bold;
+}
+
+.bootstrap-datetimepicker-widget td span {
+    color: #1e293b !important;
+}
+
+.bootstrap-datetimepicker-widget .fa,
+.bootstrap-datetimepicker-widget .fas {
+    color: #1e293b !important;
+}
+
+/* Time picker steppers: solid black up/down indicators.
+   The picker renders Bootstrap-3 glyphicon arrows, but that font is not loaded
+   here, so the stepper buttons showed up as empty circles. Draw the arrows as
+   text glyphs instead so they are visible regardless of any icon font. */
+.bootstrap-datetimepicker-widget [data-action^="increment"],
+.bootstrap-datetimepicker-widget [data-action^="decrement"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 1.9rem !important;
+    height: 1.9rem !important;
+    padding: 0 !important;
+    border: 1px solid #94a3b8 !important;
+    border-radius: 50% !important;
+    background: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.bootstrap-datetimepicker-widget [data-action^="increment"]:hover,
+.bootstrap-datetimepicker-widget [data-action^="decrement"]:hover {
+    border-color: #000 !important;
+    background: #f1f5f9 !important;
+}
+
+/* Hide the icon-font glyph that never renders. */
+.bootstrap-datetimepicker-widget [data-action^="increment"] i,
+.bootstrap-datetimepicker-widget [data-action^="decrement"] i,
+.bootstrap-datetimepicker-widget [data-action^="increment"] > span,
+.bootstrap-datetimepicker-widget [data-action^="decrement"] > span,
+.bootstrap-datetimepicker-widget th.prev i,
+.bootstrap-datetimepicker-widget th.next i,
+.bootstrap-datetimepicker-widget th.prev > span,
+.bootstrap-datetimepicker-widget th.next > span {
+    display: none !important;
+}
+
+.bootstrap-datetimepicker-widget [data-action^="increment"]::before,
+.bootstrap-datetimepicker-widget [data-action^="decrement"]::before,
+.bootstrap-datetimepicker-widget th.prev::before,
+.bootstrap-datetimepicker-widget th.next::before {
+    display: block !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    color: #000 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.bootstrap-datetimepicker-widget [data-action^="increment"]::before {
+    content: "\25B2" !important;
+}
+
+.bootstrap-datetimepicker-widget [data-action^="decrement"]::before {
+    content: "\25BC" !important;
+}
+
+/* Month navigation arrows have the same missing icon font. */
+.bootstrap-datetimepicker-widget th.prev,
+.bootstrap-datetimepicker-widget th.next {
+    color: #000 !important;
+    text-align: center;
+}
+
+.bootstrap-datetimepicker-widget th.prev::before {
+    content: "\2039" !important;
+    font-size: 15px !important;
+}
+
+.bootstrap-datetimepicker-widget th.next::before {
+    content: "\203A" !important;
+    font-size: 15px !important;
+}
